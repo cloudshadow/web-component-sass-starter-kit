@@ -18,11 +18,12 @@ const Button: React.FunctionComponent<IButtonProps> = ({
       className={[
         'button-container',
         `${size}`,
-        `${theme}`,
-        `${className}`,
-        `${fullWidth && 'full-width'}`,
-        `${disabled && 'disabled'}`,
-      ].join(' ')}
+        `${disabled ? 'disabled' : theme}`,
+        `${className ? className : ''}`,
+        `${fullWidth ? 'full-width' : ''}`,
+      ]
+        .filter((attr) => attr !== null)
+        .join(' ')}
       onClick={onClick}
     >
       {children}

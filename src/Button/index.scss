@@ -1,23 +1,32 @@
 .button-container{
-  color: #fff;
-  border: 1px solid transparent;
   border-radius: 6px;
   padding: 6px 12px;
   font-size: 16px;
-  background-color: #458500;
   cursor: pointer;
   width: auto;
 }
-.button-container .secondary{
+.button-container.primary{
+  color: #fff;
+  background-color: #458500;
+  border: 1px solid transparent;
+}
+.button-container.secondary{
   color: #333;
   background-color: #fff;
   border: 1px solid transparent;
 }
-.button-container .disable{
+.button-container.disabled{
+  color: #fff;
   background-color: #ccc;
+  border: 1px solid transparent;
 }
-.button-container .danger{
+.button-container.danger{
+  color: #fff;
   background-color: #d32f2f;
+  border: 1px solid transparent;
+}
+.button-container.full-width{
+  width: 100%;
 }
 
 
